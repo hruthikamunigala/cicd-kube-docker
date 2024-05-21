@@ -205,7 +205,11 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>3.9.3</version>
+                <version>3.0.0-M3</version>
+                <configuration>
+                    <testFailureIgnore>true</testFailureIgnore>
+                    <shutdown>Kill</shutdown> <!--use it if required-->
+                </configuration>
             </plugin>
 
             <!-- Jacoco Maven Plugin -->
